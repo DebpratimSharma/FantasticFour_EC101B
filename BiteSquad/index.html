@@ -3,18 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BiteSquad</title>
+    <title>BiteSquad | Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
     <header>
-        <img id="logo" src="logo.png" alt="BiteSquad">
+        <div class="logo">
+            <img id="logo" src="logo.png" alt="BiteSquad">
+        </div>
+        <div class="search-box">
+             <input type="text" placeholder="Search your cravings..." class="search-bar"><button class="searchbar-button">Search</button>
+        </div>
+        <div class="buttons">
+            <a href="#"><button class="offers">Offers</button></a>
+            <a href="#"><button class="orders">Orders</button></a>
+            <a href="login.html"><button class="user">Sign in</button></a>
+            <a href="#"><button class="more">More</button></a>
+        </div>
+
     </header>
     
     <section class="hero">
         <h2>Delicious Food Delivered to Your Door</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <a href="#" class="btn">Order Now</a>
+        <button class="order-now">Order Now</button>
     </section>
 
     <section class="featured">
@@ -25,7 +38,8 @@
             <h3>Pizza</h3>
             <p>Delicious pizza made with fresh ingredients</p>
             <p style="color: green;font-size: xx-large;">$10</p>
-          </div>
+            <a href="#">Place Order Here</a>
+        </div>
         <div class="card">
             <figure>
                 <img src="burger.jpg" alt="Image 1">
@@ -33,11 +47,16 @@
             <h3>Burger</h3>
             <p>Classic burger with juicy patty and veggies</p>
             <p style="color: green;font-size: xx-large;">$8</p>
+            <a href="#">Place Order Here</a>
           </div>
         <!-- Add more featured items here -->
     </section>
 
     <footer>
+        <p>Contact us Phone:<u>+1 8229927931</u>&nbsp;&nbsp;&nbsp; Email: 
+            <u>bitesquad@bite.com</u></p>
+            <a href="#">About us BiteSquad</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">Give your feedback</a>
         <p>&copy; 2024 BiteSquad</p>
     </footer>
 </body>

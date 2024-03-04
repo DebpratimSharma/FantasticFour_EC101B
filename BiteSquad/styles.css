@@ -6,7 +6,7 @@ body {
     background-position: center;
     background-size: cover;
     overflow: none;
-    
+    margin: 0;
     width: auto;
     margin: 0;
     padding: 0;
@@ -16,14 +16,159 @@ header {
     background: transparent;
     color: #fff;
     padding: 10px;
+    height:90px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
 }
 
 #logo{
+
     height: 70px;
     width: 70px;
     border-radius: 50%;
     padding: 10px;
-    margin-left: 20px;
+
+    transition: box-shadow 0.15s;
+    margin-bottom: 0;
+}
+#logo:hover{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo{
+
+    width: 550px;
+    display: flex;
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.search-box{
+
+    vertical-align: top;
+    display: flex;
+    flex:1;
+    margin-top: 30px;
+
+}
+
+.search-bar{
+    flex:1;
+    height: 30px;
+    border-radius: 5px;
+    border-color: white;
+    border-style: solid;
+
+}
+
+.searchbar-button{
+    background-color: #FB8500;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-color:#FB8500 ;
+    border-style: solid;
+    height: 36px;
+    transition: opacity 0.15s;
+}
+.searchbar-button:active{
+    opacity: 0.5;
+}
+
+.buttons{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: Arial;
+    font-weight: bold;
+
+}
+
+
+.offers{
+    height: 36px;
+    width: 70px;
+    margin-right: 5px;
+    background-color: white;
+    color: #FB8500;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    transition: transform 0.2s,box-shadow 0.2s,opacity 0.2s;
+
+}
+
+.offers:hover{
+    transform: scale(1.15);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+.offers:active{
+    opacity: 0.5;
+}
+
+
+.orders{
+    background-color: white;
+    color: #FB8500;
+    margin-right: 5px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    height: 36px;
+    width: 70px;
+    transition: transform 0.2s,box-shadow 0.2s,opacity 0.2s;
+}
+.orders:active{
+    opacity: 0.5;
+}
+
+.orders:hover{
+    transform: scale(1.15);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.user{
+    background-color: white;
+    color: #FB8500;
+    border-color: white;
+    border-style: solid;
+    margin-right: 5px;
+    border-radius: 5px;
+    height: 36px;
+    width: 70px;
+    transition: transform 0.2s,box-shadow 0.2s,opacity 0.2S;
+
+}
+.user:hover{
+    transform: scale(1.15);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.user:active{
+    opacity: 0.5;
+}
+
+
+.more{
+    background-color: white;
+    color: #FB8500;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    height: 36px;
+    width: 50px;
+    transition: transform 0.2s,box-shadow 0.2s,opacity 0.2s;
+}
+
+
+.more:hover{
+    transform: scale(1.15);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+.more:active{
+  opacity: 0.5;
 }
 
 nav ul {
@@ -70,16 +215,30 @@ nav ul li a {
     margin-bottom: 40px;
 }
 
-.hero a {
+.order-now{
     padding: 20px 50px;
     background-color: #FB8500;
     border-radius: 30px;
-    text-decoration: none;
+    border-color: #FB8500;
+    border-style: solid;
     color: #FDF0D5;
     font-size: large;
     font-weight: 800;
     text-transform: uppercase;
+    transition: color 0.15s, background-color 0.15s, border-color 0.15s, box-shadow  0.15s, transform 0.15s;
+    
 }
+
+.order-now:hover{
+    color: #FB8500;
+    background-color:#FDF0D5;
+    border-color: #FDF0D5;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.order-now:active{
+    transform:scale(.95);
+}
+
 
 .featured {
     display: flex;
@@ -103,6 +262,12 @@ nav ul li a {
     padding: 10px;
     /* margin: 10px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+
 }
 
 .card figure{
@@ -131,6 +296,14 @@ nav ul li a {
     color: #000022;
     font-weight: 600;
 }
+.card a{
+    text-align: center;
+    font-size: 16px;
+    color: #000022;
+    font-weight: 600;
+}
+
+
 
 footer {
     background-color: #023047;
